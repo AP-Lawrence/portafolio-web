@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+
+<html lang="es" class="scroll-smooth">
+
+<head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Portafolio personal de Alexander Suárez, Backend Developer.">
+
+<title>Alexander Suárez | Backend Developer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    sans: ['Inter', 'sans-serif'],
+                    display: ['Space Grotesk', 'sans-serif'],
+                },
+                colors: {
+                    accent: '#A3E635',
+                    background: '#09090B',
+                    surface: '#111113',
+                }
+            }
+        }
+    }
+</script>
+
+
+</head>
+
+<body class="bg-background text-white font-sans antialiased selection:bg-accent selection:text-black">
+
+<!-- NAVBAR -->
+
+<header class="fixed top-0 w-full z-50 border-b border-white/5 bg-background/80 backdrop-blur-xl">
+
+    <nav class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+
+        <div class="flex flex-col">
+
+            <a href="#" class="font-display text-xl font-bold tracking-tight">
+                AS<span class="text-accent">.</span>
+            </a>
+
+            <span class="text-[8px] text-gray-600 tracking-[0.3em]">
+                DIGITAL PORTFOLIO
+            </span>
+
+        </div>
+
+        <div class="flex items-center gap-5 md:gap-8 text-xs md:text-sm text-gray-400">
+
+            <a href="#about" class="hover:text-accent transition-colors">
+                Sobre mí
+            </a>
+
+            <a href="#skills" class="hover:text-accent transition-colors">
+                Habilidades
+            </a>
+
+            <a href="#interests" class="hover:text-accent transition-colors">
+                Intereses
+            </a>
+
+            <a href="https://github.com/AP-Lawrence"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="text-white hover:text-accent transition-colors">
+                GitHub ↗
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="min-h-screen flex items-center px-6 pt-28 pb-20 relative overflow-hidden">
+
+        <!-- Cuadrícula de fondo -->
+
+        <div class="absolute inset-0 opacity-[0.035] pointer-events-none"
+             style="background-image: linear-gradient(#A3E635 1px, transparent 1px), linear-gradient(90deg, #A3E635 1px, transparent 1px); background-size: 45px 45px;">
+        </div>
+
+        <!-- Iluminación -->
+
+        <div class="absolute top-20 right-0 w-96 h-96 bg-lime-400/10 rounded-full blur-[130px] pointer-events-none"></div>
+
+        <div class="absolute bottom-0 left-0 w-72 h-72 bg-green-500/5 rounded-full blur-[120px] pointer-events-none"></div>
+
+
+        <div class="max-w-6xl mx-auto w-full grid md:grid-cols-2 items-center gap-12 relative z-10">
+
+            <!-- PRESENTACIÓN -->
+
+            <div>
+
+                <div class="flex items-center gap-3 mb-8">
+
+                    <span class="w-2 h-2 rounded-full bg-accent animate-pulse shadow-[0_0_12px_#A3E635]"></span>
+
+                    <span class="text-[10px] uppercase tracking-[0.3em] text-gray-400">
+                        Exploring new possibilities
+                    </span>
+
+                </div>
+
+                <p class="text-gray-500 text-lg mb-4">
+                    Hola, soy
+                </p>
+
+                <h1 class="font-display text-6xl md:text-8xl font-bold tracking-tight leading-none">
+
+                    Alexander<br>
+
+                    <span class="text-accent">
+                        Suarez.
+                    </span>
+
+                </h1>
+
+                <div class="flex items-center gap-3 mt-8">
+
+                    <div class="h-px w-10 bg-accent"></div>
+
+                    <h2 class="font-display text-xl md:text-2xl text-gray-300">
+                        Backend Developer
+                    </h2>
+
+                    <span class="text-accent text-xs">
+                        / IN PROGRESS
+                    </span>
+
+                </div>
+
+                <p class="text-gray-400 leading-relaxed max-w-lg mt-7 text-sm md:text-base">
+
+                    Apasionado por la programación, el desarrollo de software
+                    y la electrónica. Construyendo bases sólidas en Backend
+                    mientras exploro el desarrollo web.
+
+                </p>
+
+                <div class="flex flex-wrap items-center gap-5 mt-10">
+
+                    <a href="https://github.com/AP-Lawrence"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="group relative bg-accent text-background px-7 py-3.5 rounded-md font-semibold text-sm overflow-hidden transition-all hover:shadow-[0_0_25px_rgba(163,230,53,0.25)]">
+
+                        <span class="relative z-10">
+                            Explorar GitHub ↗
+                        </span>
+
+                    </a>
+
+                    <a href="#about"
+                       class="text-gray-400 text-sm hover:text-accent transition-colors">
+                        Conocer más ↓
+                    </a>
+
+                </div>
+
+                <!-- Indicadores -->
+
+                <div class="flex gap-8 mt-16">
+
+                    <div>
+
+                        <p class="text-accent font-display text-xl font-bold">
+                            01
+                        </p>
+
+                        <p class="text-[9px] text-gray-600 tracking-widest mt-1">
+                            BACKEND
+                        </p>
+
+                    </div>
+
+                    <div class="w-px h-10 bg-white/10"></div>
+
+                    <div>
+
+                        <p class="text-accent font-display text-xl font-bold">
+                            02
+                        </p>
+
+                        <p class="text-[9px] text-gray-600 tracking-widest mt-1">
+                            ELECTRONICS
+                        </p>
+
+                    </div>
+
+                    <div class="w-px h-10 bg-white/10"></div>
+
+                    <div>
+
+                        <p class="text-accent font-display text-xl font-bold">
+                            03
+                        </p>
+
+                        <p class="text-[9px] text-gray-600 tracking-widest mt-1">
+                            DEVELOPMENT
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ELEMENTO FUTURISTA -->
+
+            <div class="hidden md:flex justify-center items-center relative h-[470px]">
+
+                <!-- Iluminación central -->
+
+                <div class="absolute w-80 h-80 bg-lime-400/10 rounded-full blur-[100px]"></div>
+
+                <!-- Anillos -->
+
+                <div class="absolute w-[390px] h-[390px] rounded-full border border-accent/10"></div>
+
+                <div class="absolute w-[330px] h-[330px] rounded-full border border-white/10"></div>
+
+                <div class="absolute w-[270px] h-[270px] rounded-full border border-accent/20"></div>
+
+                <div class="absolute w-[390px] h-[390px] rounded-full border-t-2 border-accent/80 animate-spin"></div>
+
+                <div class="absolute w-[310px] h-[310px] rounded-full border-b border-lime-300/60 animate-spin"
+                     style="animation-direction: reverse; animation-duration: 12s;">
+                </div>
+
+                <!-- Núcleo -->
+
+                <div class="relative w-44 h-44 rounded-full bg-gradient-to-br from-lime-300 via-lime-500 to-green-900 flex items-center justify-center shadow-[0_0_50px_rgba(163,230,53,0.35),0_0_120px_rgba(163,230,53,0.15)]">
+
+                    <div class="absolute inset-2 rounded-full border border-white/30"></div>
+
+                    <div class="absolute inset-5 rounded-full border border-black/20"></div>
+
+                    <span class="font-display text-5xl font-bold text-black">
+                        AS
+                    </span>
+
+                </div>
+
+                <!-- Partículas -->
+
+                <span class="absolute top-10 right-20 w-3 h-3 bg-accent rounded-full shadow-[0_0_20px_#A3E635]"></span>
+
+                <span class="absolute bottom-16 left-20 w-2 h-2 bg-lime-300 rounded-full shadow-[0_0_20px_#A3E635]"></span>
+
+                <span class="absolute top-32 left-12 w-1.5 h-1.5 bg-white rounded-full shadow-[0_0_15px_white]"></span>
+
+                <span class="absolute bottom-24 right-16 w-2 h-2 bg-accent rounded-full shadow-[0_0_15px_#A3E635]"></span>
+
+                <!-- Panel superior -->
+
+                <div class="absolute top-5 left-0 border border-white/10 bg-black/50 backdrop-blur-xl rounded-lg px-4 py-3">
+
+                    <p class="text-[9px] uppercase tracking-[0.2em] text-gray-500">
+                        System status
+                    </p>
+
+                    <p class="text-xs text-accent mt-2">
+                        ● Learning mode
+                    </p>
+
+                </div>
+
+                <!-- Panel inferior -->
+
+                <div class="absolute bottom-5 right-0 border border-white/10 bg-black/50 backdrop-blur-xl rounded-lg px-4 py-3">
+
+                    <p class="text-[9px] uppercase tracking-[0.2em] text-gray-500">
+                        Main focus
+                    </p>
+
+                    <p class="text-xs text-white mt-2">
+                        Backend Development
+                    </p>
+
+                </div>
+
+                <!-- Etiqueta lateral -->
+
+                <div class="absolute right-0 top-1/2 translate-x-10 -rotate-90 origin-right text-[9px] tracking-[0.4em] text-gray-700">
+                    DIGITAL INTERFACE / AS-001
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Información inferior -->
+
+        <div class="absolute bottom-7 left-0 w-full px-6">
+
+            <div class="max-w-6xl mx-auto border-t border-white/10 pt-5 flex justify-between text-[9px] text-gray-600 uppercase tracking-[0.3em]">
+
+                <span>Software development</span>
+
+                <span>Continuous learning</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SOBRE MÍ -->
+
+    <section id="about" class="py-32 px-6 border-t border-white/5 relative overflow-hidden">
+
+        <div class="absolute top-20 right-0 w-72 h-72 bg-lime-400/5 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto relative z-10">
+
+            <div class="grid md:grid-cols-2 gap-16">
+
+                <div>
+
+                    <div class="flex items-center gap-3">
+
+                        <span class="text-accent text-xs tracking-[0.3em]">
+                            01 / INTRODUCTION
+                        </span>
+
+                        <div class="h-px w-12 bg-accent/50"></div>
+
+                    </div>
+
+                    <h2 class="font-display text-4xl md:text-5xl font-bold mt-7">
+                        Un poco<br>
+                        sobre mí<span class="text-accent">.</span>
+                    </h2>
+
+                    <p class="text-[10px] text-gray-600 tracking-[0.3em] mt-5">
+                        PERSONAL PROFILE / AS-001
+                    </p>
+
+                </div>
+
+                <div class="text-gray-400 leading-relaxed space-y-6 text-base">
+
+                    <p>
+                        Soy una persona apasionada por la tecnología,
+                        la programación y la creación de soluciones
+                        mediante software.
+                    </p>
+
+                    <p>
+                        Mi principal interés está en el desarrollo Backend,
+                        donde busco fortalecer mis conocimientos en lógica
+                        de programación, estructuras de datos y bases de datos.
+                    </p>
+
+                    <p>
+                        También disfruto explorar el desarrollo frontend,
+                        la electrónica y el funcionamiento de los circuitos.
+                        Me interesa entender cómo funcionan las cosas
+                        y aprender constantemente.
+                    </p>
+
+                    <div class="flex items-center gap-3 pt-5">
+
+                        <span class="w-2 h-2 bg-accent rounded-full shadow-[0_0_10px_#A3E635]"></span>
+
+                        <span class="text-[10px] text-gray-500 tracking-widest">
+                            ALWAYS LEARNING / ALWAYS BUILDING
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HABILIDADES -->
+
+    <section id="skills" class="py-32 px-6 border-t border-white/5 relative overflow-hidden">
+
+        <div class="absolute bottom-0 left-0 w-72 h-72 bg-lime-400/5 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto relative z-10">
+
+            <div class="flex items-center gap-3">
+
+                <span class="text-accent text-xs tracking-[0.3em]">
+                    02 / TECHNOLOGIES
+                </span>
+
+                <div class="h-px w-12 bg-accent/50"></div>
+
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between md:items-end gap-6 mt-7 mb-16">
+
+                <h2 class="font-display text-4xl md:text-5xl font-bold">
+                    Mi stack<span class="text-accent">.</span>
+                </h2>
+
+                <p class="text-gray-500 max-w-sm text-sm leading-relaxed">
+                    Tecnologías y herramientas con las que he comenzado
+                    a construir mis conocimientos.
+                </p>
+
+            </div>
+
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+                <!-- Lenguajes -->
+
+                <article class="group relative overflow-hidden bg-gradient-to-br from-[#171719] to-[#0D0D0F] border border-white/10 rounded-xl p-7 hover:border-accent/40 hover:-translate-y-2 transition-all duration-300">
+
+                    <div class="absolute top-0 left-0 w-12 h-[2px] bg-accent"></div>
+
+                    <div class="flex justify-between items-center">
+
+                        <span class="text-accent text-xs tracking-widest">
+                            01
+                        </span>
+
+                        <span class="text-[9px] text-gray-600 tracking-widest">
+                            LANGUAGES
+                        </span>
+
+                    </div>
+
+                    <h3 class="font-display text-xl font-semibold mt-8 mb-6">
+                        Lenguajes
+                    </h3>
+
+                    <div class="flex flex-wrap gap-2">
+
+                        <span class="bg-accent/5 border border-accent/10 text-accent text-xs px-3 py-2 rounded-md">Python</span>
+
+                        <span class="bg-accent/5 border border-accent/10 text-accent text-xs px-3 py-2 rounded-md">C++</span>
+
+                        <span class="bg-accent/5 border border-accent/10 text-accent text-xs px-3 py-2 rounded-md">Java</span>
+
+                    </div>
+
+                    <div class="mt-8 pt-4 border-t border-white/5 flex justify-between text-[9px] text-gray-600 tracking-widest">
+
+                        <span>CORE SKILLS</span>
+
+                        <span class="text-accent">01/04</span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Frontend -->
+
+                <article class="group relative overflow-hidden bg-gradient-to-br from-[#171719] to-[#0D0D0F] border border-white/10 rounded-xl p-7 hover:border-accent/40 hover:-translate-y-2 transition-all duration-300">
+
+                    <div class="absolute top-0 left-0 w-12 h-[2px] bg-accent"></div>
+
+                    <div class="flex justify-between items-center">
+
+                        <span class="text-accent text-xs tracking-widest">
+                            02
+                        </span>
+
+                        <span class="text-[9px] text-gray-600 tracking-widest">
+                            FRONTEND
+                        </span>
+
+                    </div>
+
+                    <h3 class="font-display text-xl font-semibold mt-8 mb-6">
+                        Frontend
+                    </h3>
+
+                    <div class="flex flex-wrap gap-2">
+
+                        <span class="bg-accent/5 border border-accent/10 text-accent text-xs px-3 py-2 rounded-md">HTML5</span>
+
+                        <span class="bg-accent/5 border border-accent/10 text-accent text-xs px-3 py-2 rounded-md">CSS3</span>
+
+                        <span class="bg-accent/5 border border-accent/10 text-accent text-xs px-3 py-2 rounded-md">Tailwind</span>
+
+                    </div>
+
+                    <div class="mt-8 pt-4 border-t border-white/5 flex justify-between text-[9px] text-gray-600 tracking-widest">
+
+                        <span>WEB DESIGN</span>
+
+                        <span class="text-accent">02/04</span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Database -->
+
+                <article class="group relative overflow-hidden bg-gradient-to-br from-[#171719] to-[#0D0D0F] border border-white/10 rounded-xl p-7 hover:border-accent/40 hover:-translate-y-2 transition-all duration-300">
+
+                    <div class="absolute top-0 left-0 w-12 h-[2px] bg-accent"></div>
+
+                    <div class="flex justify-between items-center">
+
+                        <span class="text-accent text-xs tracking-widest">
+                            03
+                        </span>
+
+                        <span class="text-[9px] text-gray-600 tracking-widest">
+                            DATABASE
+                        </span>
+
+                    </div>
+
+                    <h3 class="font-display text-xl font-semibold mt-8 mb-6">
+                        Database
+                    </h3>
+
+                    <div class="flex flex-wrap gap-2">
+
+                        <span class="bg-accent/5 border border-accent/10 text-accent text-xs px-3 py-2 rounded-md">SQL</span>
+
+                    </div>
+
+                    <div class="mt-8 pt-4 border-t border-white/5 flex justify-between text-[9px] text-gray-600 tracking-widest">
+
+                        <span>DATA STRUCTURE</span>
+
+                        <span class="text-accent">03/04</span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Herramientas -->
+
+                <article class="group relative overflow-hidden bg-gradient-to-br from-[#171719] to-[#0D0D0F] border border-white/10 rounded-xl p-7 hover:border-accent/40 hover:-translate-y-2 transition-all duration-300">
+
+                    <div class="absolute top-0 left-0 w-12 h-[2px] bg-accent"></div>
+
+                    <div class="flex justify-between items-center">
+
+                        <span class="text-accent text-xs tracking-widest">
+                            04
+                        </span>
+
+                        <span class="text-[9px] text-gray-600 tracking-widest">
+                            TOOLS
+                        </span>
+
+                    </div>
+
+                    <h3 class="font-display text-xl font-semibold mt-8 mb-6">
+                        Herramientas
+                    </h3>
+
+                    <div class="flex flex-wrap gap-2">
+
+                        <span class="bg-accent/5 border border-accent/10 text-accent text-xs px-3 py-2 rounded-md">Qt Creator</span>
+
+                    </div>
+
+                    <div class="mt-8 pt-4 border-t border-white/5 flex justify-between text-[9px] text-gray-600 tracking-widest">
+
+                        <span>DEVELOPMENT TOOLS</span>
+
+                        <span class="text-accent">04/04</span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTERESES -->
+
+    <section id="interests" class="py-32 px-6 border-t border-white/5 relative overflow-hidden">
+
+        <div class="absolute top-20 right-0 w-80 h-80 bg-lime-400/5 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto relative z-10">
+
+            <div class="flex items-center gap-3">
+
+                <span class="text-accent text-xs tracking-[0.3em]">
+                    03 / BEYOND THE CODE
+                </span>
+
+                <div class="h-px w-12 bg-accent/50"></div>
+
+            </div>
+
+            <h2 class="font-display text-4xl md:text-5xl font-bold mt-7 mb-5">
+                Lo que me mueve<span class="text-accent">.</span>
+            </h2>
+
+            <p class="text-gray-500 text-sm max-w-lg mb-14 leading-relaxed">
+                Mis intereses van más allá de la tecnología.
+                Siempre hay algo nuevo que descubrir.
+            </p>
+
+
+            <div class="grid md:grid-cols-3 gap-6">
+
+
+                <!-- ELECTRÓNICA -->
+
+                <article class="group relative overflow-hidden bg-gradient-to-br from-[#171719] to-[#0D0D0F] border border-white/10 rounded-xl p-8 hover:border-accent/40 transition-all duration-300">
+
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-accent/5 rounded-full blur-3xl"></div>
+
+                    <div class="flex justify-between items-center">
+
+                        <span class="text-3xl text-accent font-display">
+                            &lt;/&gt;
+                        </span>
+
+                        <span class="text-[9px] text-gray-600 tracking-widest">
+                            INTEREST / 01
+                        </span>
+
+                    </div>
+
+                    <h3 class="font-display text-xl font-semibold mt-9 mb-4">
+                        Electrónica y circuitos
+                    </h3>
+
+                    <p class="text-gray-400 text-sm leading-7">
+                        Me apasiona explorar el mundo de la electrónica,
+                        comprender el funcionamiento de los circuitos y
+                        experimentar con componentes electrónicos, desde
+                        la distribución de componentes hasta el diseño de PCB.
+                    </p>
+
+                    <div class="mt-8 pt-5 border-t border-white/5 flex items-center justify-between">
+
+                        <span class="text-[9px] text-gray-600 tracking-widest">
+                            HARDWARE & DESIGN
+                        </span>
+
+                        <span class="text-accent text-xs group-hover:translate-x-1 transition-transform">
+                            ↗
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- HISTORIA -->
+
+                <article class="group relative overflow-hidden bg-gradient-to-br from-[#171719] to-[#0D0D0F] border border-white/10 rounded-xl p-8 hover:border-accent/40 transition-all duration-300">
+
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-accent/5 rounded-full blur-3xl"></div>
+
+                    <div class="flex justify-between items-center">
+
+                        <span class="text-3xl text-accent font-display">
+                            ⚔
+                        </span>
+
+                        <span class="text-[9px] text-gray-600 tracking-widest">
+                            INTEREST / 02
+                        </span>
+
+                    </div>
+
+                    <h3 class="font-display text-xl font-semibold mt-9 mb-4">
+                        Historia y mitología
+                    </h3>
+
+                    <p class="text-gray-400 text-sm leading-7">
+                        Me interesa conocer la historia de antiguas civilizaciones,
+                        especialmente Roma y Grecia, sus culturas, acontecimientos
+                        y mitologías. También disfruto los videojuegos ambientados
+                        en diferentes épocas históricas.
+                    </p>
+
+                    <div class="mt-8 pt-5 border-t border-white/5 flex items-center justify-between">
+
+                        <span class="text-[9px] text-gray-600 tracking-widest">
+                            HISTORY & CULTURE
+                        </span>
+
+                        <span class="text-accent text-xs group-hover:translate-x-1 transition-transform">
+                            ↗
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- FINANZAS -->
+
+                <article class="group relative overflow-hidden bg-gradient-to-br from-[#171719] to-[#0D0D0F] border border-white/10 rounded-xl p-8 hover:border-accent/40 transition-all duration-300">
+
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-accent/5 rounded-full blur-3xl"></div>
+
+                    <div class="flex justify-between items-center">
+
+                        <span class="text-3xl text-accent font-display">
+                            $
+                        </span>
+
+                        <span class="text-[9px] text-gray-600 tracking-widest">
+                            INTEREST / 03
+                        </span>
+
+                    </div>
+
+                    <h3 class="font-display text-xl font-semibold mt-9 mb-4">
+                        Finanzas y negocios
+                    </h3>
+
+                    <p class="text-gray-400 text-sm leading-7">
+                        Me interesa aprender sobre educación financiera,
+                        créditos, inversiones y modelos de negocio.
+                        Disfruto comprender cómo funcionan la economía
+                        y las decisiones financieras.
+                    </p>
+
+                    <div class="mt-8 pt-5 border-t border-white/5 flex items-center justify-between">
+
+                        <span class="text-[9px] text-gray-600 tracking-widest">
+                            FINANCE & BUSINESS
+                        </span>
+
+                        <span class="text-accent text-xs group-hover:translate-x-1 transition-transform">
+                            ↗
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer class="border-t border-white/10 px-6 py-10 bg-[#0D0D0F]/80">
+
+    <div class="max-w-6xl mx-auto">
+
+        <div class="flex items-center justify-center gap-2 mb-8">
+
+            <span class="w-1.5 h-1.5 rounded-full bg-accent animate-pulse shadow-[0_0_10px_#A3E635]"></span>
+
+            <span class="text-[9px] text-gray-600 tracking-[0.3em]">
+                SYSTEM ONLINE
+            </span>
+
+        </div>
+
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-5">
+
+            <p class="text-sm text-gray-500">
+                Diseñado y desarrollado por
+                <span class="text-white font-medium">
+                    Alexander Suárez.
+                </span>
+            </p>
+
+            <a href="https://github.com/AP-Lawrence"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="text-sm text-accent hover:text-lime-300 transition-colors">
+                GitHub ↗
+            </a>
+
+            <span class="text-xs text-gray-600">
+                © 2026
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
