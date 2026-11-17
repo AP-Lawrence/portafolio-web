@@ -4,9 +4,9 @@ Portafolio personal desarrollado con **HTML5, Tailwind CSS y CSS**, diseñado pa
 
 El proyecto utiliza una estética moderna y minimalista, con una temática futurista, colores oscuros y detalles en verde lima.
 
-##  Demo
+##  Enlaces
 
-- **Sitio web:** [Agregar aquí el enlace del proyecto publicado]
+- **Sitio web:** https://github.com/AP-Lawrence/portafolio-web
 - **Repositorio:** https://github.com/AP-Lawrence
 
 ##  Descripción del proyecto
@@ -17,7 +17,7 @@ El diseño está organizado en diferentes secciones para facilitar la navegació
 
 ### Secciones
 
-- **Inicio (Hero):** Presentación personal, nombre y enfoque profesional como Backend Developer.
+- **Inicio:** Presentación personal, nombre y enfoque profesional como Backend Developer.
 - **Sobre mí:** Información sobre mi perfil, motivaciones e intereses en la programación.
 - **Habilidades:** Tecnologías y herramientas que estoy aprendiendo y utilizando.
 - **Intereses:** Información sobre mis intereses en electrónica, historia, mitología, finanzas y negocios.
